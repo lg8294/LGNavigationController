@@ -10,9 +10,9 @@
 		815717A71EEA6FB4009E2F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717A61EEA6FB4009E2F37 /* main.m */; };
 		815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717A91EEA6FB4009E2F37 /* AppDelegate.m */; };
 		815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717AC1EEA6FB4009E2F37 /* ViewController.m */; };
-		815717B01EEA6FB4009E2F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815717AE1EEA6FB4009E2F37 /* Main.storyboard */; };
 		815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815717B11EEA6FB4009E2F37 /* Assets.xcassets */; };
 		815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */; };
+		815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,11 @@
 		815717A91EEA6FB4009E2F37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		815717AB1EEA6FB4009E2F37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		815717AC1EEA6FB4009E2F37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		815717AF1EEA6FB4009E2F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		815717B11EEA6FB4009E2F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815717B41EEA6FB4009E2F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		815717B61EEA6FB4009E2F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNavigationController.h; sourceTree = "<group>"; };
+		815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +63,12 @@
 				815717A91EEA6FB4009E2F37 /* AppDelegate.m */,
 				815717AB1EEA6FB4009E2F37 /* ViewController.h */,
 				815717AC1EEA6FB4009E2F37 /* ViewController.m */,
-				815717AE1EEA6FB4009E2F37 /* Main.storyboard */,
 				815717B11EEA6FB4009E2F37 /* Assets.xcassets */,
 				815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */,
 				815717B61EEA6FB4009E2F37 /* Info.plist */,
 				815717A51EEA6FB4009E2F37 /* Supporting Files */,
+				815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */,
+				815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */,
 			);
 			path = LGNavigationController;
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 				TargetAttributes = {
 					815717A11EEA6FB3009E2F37 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P9U3B2WZ8G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +142,6 @@
 			files = (
 				815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */,
 				815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */,
-				815717B01EEA6FB4009E2F37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,7 @@
 			files = (
 				815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */,
 				815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */,
+				815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */,
 				815717A71EEA6FB4009E2F37 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		815717AE1EEA6FB4009E2F37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				815717AF1EEA6FB4009E2F37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -219,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -272,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P9U3B2WZ8G;
 				INFOPLIST_FILE = LGNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.arrcencloud.LGNavigationController;
@@ -283,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P9U3B2WZ8G;
 				INFOPLIST_FILE = LGNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.arrcencloud.LGNavigationController;
@@ -309,6 +306,7 @@
 				815717BB1EEA6FB4009E2F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
