@@ -18,9 +18,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-//    UIBarButtonItem *backBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(backAction:)];
-//    self.navigationItem.leftBarButtonItem = backBarItem;
+    self.title = [NSString stringWithFormat:@"%lu", self.navigationController.viewControllers.count];
     
     UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [nextBtn setTitle:@"下一页" forState:UIControlStateNormal];
@@ -28,24 +26,23 @@
     [nextBtn sizeToFit];
     [nextBtn setCenter:self.view.center];
     [self.view addSubview:nextBtn];
+    
+//    if (self.navigationController.viewControllers.count % 2 == 0) {
+//        [self.navigationController setNavigationBarHidden:YES];
+//    } else {
+//        [self.navigationController setNavigationBarHidden:NO];
+//    }
+}
+
+#pragma mark - handle
+
+- (IBAction)nextPage:(id)sender {
+    
+    ViewController *nextVC = [[ViewController alloc] init];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)nextPage:(id)sender {
-    
-//    UIStoryboard *mainStory = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    ViewController *nextVC = [mainStory instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
-    
-    ViewController *nextVC = [[ViewController alloc] init];
-    nextVC.title = [NSString stringWithFormat:@"%lu", self.navigationController.viewControllers.count + 1];
-    [self.navigationController pushViewController:nextVC animated:YES];
 }
 @end

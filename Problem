@@ -1,0 +1,1 @@
+iOS7之后系统提供了侧滑手势（interactivePopGestureRecognizer），即从屏幕左侧边缘滑起会 pop 回导航控制器栈的上个 viewController。不过如果你自定义了UINavigationViewController 或者自定义了返回按钮，系统自带的侧滑返回功能会失效。

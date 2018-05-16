@@ -16,66 +16,68 @@
 
 @implementation LGNavigationController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    NslogSelf;
-    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.delegate = self;
-        self.delegate = self;
-    }
-}
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    // Do any additional setup after loading the view.
+//    
+//    NslogSelf;
+//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+//        self.interactivePopGestureRecognizer.delegate = self;
+//        self.delegate = self;
+//    }
+//}
 
-- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
-    NslogSelf;
-    return [super popViewControllerAnimated:animated];
-}
+//- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+//    NslogSelf;
+//    return [super popViewControllerAnimated:animated];
+//}
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    NslogSelf;
-    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.enabled = NO;
-    }
-    //设置返回按钮
-    if (self.viewControllers.count > 0) {
-        viewController.navigationItem.leftBarButtonItem = self.navigationItem.backBarButtonItem;
-    }
-    
-    [super pushViewController:viewController animated:animated];
-}
+//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    NslogSelf;
+//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+//        self.interactivePopGestureRecognizer.enabled = NO;
+//    }
+//    //设置返回按钮
+//    if (self.viewControllers.count > 0) {
+//        viewController.navigationItem.leftBarButtonItem = self.navigationItem.backBarButtonItem;
+//    }
+//
+//    [super pushViewController:viewController animated:animated];
+//}
 
 #pragma mark - UINavigationControllerDelegate
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    NslogSelf;
-    NSLog(@"%@", viewController);
-    
-    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.enabled = YES;
-    }
-}
+//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    NslogSelf;
+//    NSLog(@"%@", viewController);
+//
+//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+//        self.interactivePopGestureRecognizer.enabled = YES;
+//    }
+//}
 
 #pragma mark - UIGestureRecognizerDelegate
 // 使navigationcontroller中第一个控制器不响应右滑pop手势
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    NslogSelf;
-    if (self.childViewControllers.count == 1) {
-        return NO;
-    }
-    return YES;
-}
+//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+//    NslogSelf;
+//    if (self.childViewControllers.count == 1) {
+//        return NO;
+//    }
+//    return YES;
+//}
+
 // 解决多个手势冲突 同时接受多个手势
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    NslogSelf;
-    return YES;
-}
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//    NslogSelf;
+//    return YES;
+//}
+
 // 解决在手指滑动时候,被pop的viewController中的UIscrollView会跟着一起滚动
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    
-    NslogSelf;
-    return [gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
-}
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//
+//    NslogSelf;
+//    return [gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
+//}
 
 //手指触摸屏幕后回调的方法，返回NO则不再进行手势识别，方法触发等
 //- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;

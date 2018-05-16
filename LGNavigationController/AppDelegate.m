@@ -9,8 +9,12 @@
 #import "AppDelegate.h"
 #import "LGNavigationController.h"
 #import "ViewController.h"
+#import "LGNavigationControllerDelegate.h"
+#import "LGPushAnimatedTransitioning.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) LGNavigationControllerDelegate *navcD;
 
 @end
 
@@ -22,11 +26,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     UINavigationController *rootNav = [[LGNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    
+    self.navcD = [[LGNavigationControllerDelegate alloc] init];
+    rootNav.delegate = self.navcD;
+//    rootNav.transitioningDelegate = [[LGAnimatedTransitioning alloc] init];
     self.window.rootViewController = rootNav;
-    
     [self.window makeKeyAndVisible];
     
     return YES;
