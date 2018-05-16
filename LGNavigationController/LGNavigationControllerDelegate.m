@@ -15,6 +15,7 @@
 @property (nonatomic, strong) LGPushAnimatedTransitioning *animator;
 @property (nonatomic, strong) LGPopAnimatedTransitioning *popAnimator;
 
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactionController;
 @end
 
 @implementation LGNavigationControllerDelegate
@@ -25,6 +26,7 @@
     if (self) {
         _animator = [[LGPushAnimatedTransitioning alloc] init];
         _popAnimator = [[LGPopAnimatedTransitioning alloc] init];
+        _interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
     }
     return self;
 }
@@ -37,6 +39,11 @@
     }
     
     return nil;
+}
+
+//交互式动画，在非交互式动画效果中，该方法返回 nil。
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    return self.interactionController;
 }
 
 @end
