@@ -7,17 +7,16 @@
 //
 
 #import "LGNavigationControllerDelegate.h"
-#import "LGPushAnimatedTransitioning.h"
-#import "LGPopAnimatedTransitioning.h"
-#import "LGNavigationAnimatedController.h"
+#import "LGAnimatedController.h"
+#import "LGInteractiveController.h"
 
 @interface LGNavigationControllerDelegate ()
 
-@property (nonatomic, strong) LGPushAnimatedTransitioning *pushAnimator;
-@property (nonatomic, strong) LGPopAnimatedTransitioning *popAnimator;
-@property (nonatomic, strong) LGNavigationAnimatedController *animator;
+@property (nonatomic, strong) LGAnimatedController *animator;
+@property (nonatomic, strong) LGInteractiveController *interactionController;
 
-@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactionController;
+@property (nonatomic, assign) UINavigationControllerOperation *operation;
+
 @end
 
 @implementation LGNavigationControllerDelegate
@@ -26,28 +25,37 @@
 {
     self = [super init];
     if (self) {
-        _pushAnimator = [[LGPushAnimatedTransitioning alloc] init];
-        _popAnimator = [[LGPopAnimatedTransitioning alloc] init];
-        _animator = [[LGNavigationAnimatedController alloc] init];
-        _interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
+        _animator = [[LGAnimatedController alloc] init];
+        _interactionController = [[LGInteractiveController alloc] init];
     }
     return self;
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    [self.interactionController addToVC:viewController];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
 
     self.animator.operation = operation;
+    self.operation = operation;
     return self.animator;
-//    if (operation == UINavigationControllerOperationPush) {
-//        return self.pushAnimator;
-//    } else {
-//        return self.popAnimator;
-//    }
 }
 
 //交互式动画，在非交互式动画效果中，该方法返回 nil。
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-    return self.interactive ? self.interactionController : nil;
+    
+    if (self.operation == UINavigationControllerOperationPop) {
+        if (self.interactionController.inProgress) {
+            return self.interactionController;
+        } else {
+            return nil;
+        }
+    } else {
+        return nil;
+        
+    }
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LGNavigationAnimatedController : NSObject <UIViewControllerAnimatedTransitioning>
+@interface LGAnimatedController : NSObject <UIViewControllerAnimatedTransitioning>
 
 - (instancetype)initWithOperation:(UINavigationControllerOperation)operation;
 

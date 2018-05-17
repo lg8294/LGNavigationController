@@ -6,15 +6,15 @@
 //  Copyright © 2018年 iOS. All rights reserved.
 //
 
-#import "LGNavigationAnimatedController.h"
+#import "LGAnimatedController.h"
 #import "LGPushAnimatedTransitioning.h"
 #import "LGPopAnimatedTransitioning.h"
 
-@interface LGNavigationAnimatedController ()
+@interface LGAnimatedController ()
 
 @end
 
-@implementation LGNavigationAnimatedController
+@implementation LGAnimatedController
 
 - (instancetype)initWithOperation:(UINavigationControllerOperation)operation
 {
@@ -49,8 +49,6 @@
         
         [[transitionContext containerView] addSubview:toView];
         toView.alpha = 0;
-        
-        toView addGestureRecognizer:<#(nonnull UIGestureRecognizer *)#>
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             toView.alpha = 1;
