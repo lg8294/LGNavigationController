@@ -11,4 +11,6 @@
 
 @interface LGNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
 
+@property (nonatomic, assign) BOOL interactive;
+
 @end

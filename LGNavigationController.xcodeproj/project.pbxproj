@@ -13,11 +13,11 @@
 		815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815717B11EEA6FB4009E2F37 /* Assets.xcassets */; };
 		815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */; };
 		815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */; };
-		CBA3AEEA20AC272D00F056C8 /* LGNavigationController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEE920AC272D00F056C8 /* LGNavigationController+Custom.m */; };
 		CBA3AEEC20AC283100F056C8 /* Problem in Resources */ = {isa = PBXBuildFile; fileRef = CBA3AEEB20AC283100F056C8 /* Problem */; };
 		CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */; };
 		CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */; };
 		CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */; };
+		CBEE753720AD7B280054A1DE /* LGNavigationAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753620AD7B280054A1DE /* LGNavigationAnimatedController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,6 @@
 		815717B61EEA6FB4009E2F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNavigationController.h; sourceTree = "<group>"; };
 		815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
-		CBA3AEE820AC272D00F056C8 /* LGNavigationController+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LGNavigationController+Custom.h"; sourceTree = "<group>"; };
-		CBA3AEE920AC272D00F056C8 /* LGNavigationController+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LGNavigationController+Custom.m"; sourceTree = "<group>"; };
 		CBA3AEEB20AC283100F056C8 /* Problem */ = {isa = PBXFileReference; lastKnownFileType = text; path = Problem; sourceTree = "<group>"; };
 		CBA3AEED20AC2E6300F056C8 /* LGPushAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPushAnimatedTransitioning.h; sourceTree = "<group>"; };
 		CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPushAnimatedTransitioning.m; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationControllerDelegate.m; sourceTree = "<group>"; };
 		CBA3AEF320AC392A00F056C8 /* LGPopAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPopAnimatedTransitioning.h; sourceTree = "<group>"; };
 		CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPopAnimatedTransitioning.m; sourceTree = "<group>"; };
+		CBEE753520AD7B280054A1DE /* LGNavigationAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationAnimatedController.h; sourceTree = "<group>"; };
+		CBEE753620AD7B280054A1DE /* LGNavigationAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationAnimatedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +74,10 @@
 		815717A41EEA6FB4009E2F37 /* LGNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				CBA3AEF620AC396000F056C8 /* ViewControllerAnimatedTransitioning */,
+				CBEE753420AD7AE70054A1DE /* 转场控制器 */,
+				CBEE752220AD1F940054A1DE /* 动画控制器 */,
 				815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */,
 				815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */,
-				CBA3AEE820AC272D00F056C8 /* LGNavigationController+Custom.h */,
-				CBA3AEE920AC272D00F056C8 /* LGNavigationController+Custom.m */,
 				815717A81EEA6FB4009E2F37 /* AppDelegate.h */,
 				815717A91EEA6FB4009E2F37 /* AppDelegate.m */,
 				815717AB1EEA6FB4009E2F37 /* ViewController.h */,
@@ -87,8 +86,6 @@
 				815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */,
 				815717B61EEA6FB4009E2F37 /* Info.plist */,
 				815717A51EEA6FB4009E2F37 /* Supporting Files */,
-				CBA3AEF020AC343600F056C8 /* LGNavigationControllerDelegate.h */,
-				CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */,
 			);
 			path = LGNavigationController;
 			sourceTree = "<group>";
@@ -101,15 +98,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CBA3AEF620AC396000F056C8 /* ViewControllerAnimatedTransitioning */ = {
+		CBEE752220AD1F940054A1DE /* 动画控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				CBA3AEED20AC2E6300F056C8 /* LGPushAnimatedTransitioning.h */,
 				CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */,
 				CBA3AEF320AC392A00F056C8 /* LGPopAnimatedTransitioning.h */,
 				CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */,
+				CBEE753520AD7B280054A1DE /* LGNavigationAnimatedController.h */,
+				CBEE753620AD7B280054A1DE /* LGNavigationAnimatedController.m */,
 			);
-			name = ViewControllerAnimatedTransitioning;
+			path = "动画控制器";
+			sourceTree = "<group>";
+		};
+		CBEE753420AD7AE70054A1DE /* 转场控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				CBA3AEF020AC343600F056C8 /* LGNavigationControllerDelegate.h */,
+				CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */,
+			);
+			path = "转场控制器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEE753720AD7B280054A1DE /* LGNavigationAnimatedController.m in Sources */,
 				815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */,
 				CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */,
 				815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */,
-				CBA3AEEA20AC272D00F056C8 /* LGNavigationController+Custom.m in Sources */,
 				815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */,
 				CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */,
 				815717A71EEA6FB4009E2F37 /* main.m in Sources */,
