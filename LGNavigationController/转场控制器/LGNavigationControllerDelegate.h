@@ -11,4 +11,6 @@
 
 @interface LGNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
 
+- (void)setupNavigationController:(UINavigationController *)navigationController;
+
 @end

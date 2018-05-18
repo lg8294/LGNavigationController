@@ -10,8 +10,4 @@
 
 @interface LGInteractiveController : UIPercentDrivenInteractiveTransition
 
-@property (nonatomic, assign) BOOL inProgress;
-
-- (void)addToVC:(UIViewController *)vc;
-
 @end

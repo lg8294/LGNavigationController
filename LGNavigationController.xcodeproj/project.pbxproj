@@ -12,11 +12,12 @@
 		815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717AC1EEA6FB4009E2F37 /* ViewController.m */; };
 		815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815717B11EEA6FB4009E2F37 /* Assets.xcassets */; };
 		815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */; };
-		815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */; };
 		CBA3AEEC20AC283100F056C8 /* Problem in Resources */ = {isa = PBXBuildFile; fileRef = CBA3AEEB20AC283100F056C8 /* Problem */; };
 		CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */; };
 		CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */; };
 		CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */; };
+		CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8BC20AE6A1400893392 /* LGNavigationController.m */; };
+		CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */; };
 		CBEE753720AD7B280054A1DE /* LGAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753620AD7B280054A1DE /* LGAnimatedController.m */; };
 		CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1BFA9B20ADC82900661818 /* LGInteractiveController.m */; };
 /* End PBXBuildFile section */
@@ -31,8 +32,6 @@
 		815717B11EEA6FB4009E2F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815717B41EEA6FB4009E2F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		815717B61EEA6FB4009E2F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNavigationController.h; sourceTree = "<group>"; };
-		815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
 		CBA3AEEB20AC283100F056C8 /* Problem */ = {isa = PBXFileReference; lastKnownFileType = text; path = Problem; sourceTree = "<group>"; };
 		CBA3AEED20AC2E6300F056C8 /* LGPushAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPushAnimatedTransitioning.h; sourceTree = "<group>"; };
 		CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPushAnimatedTransitioning.m; sourceTree = "<group>"; };
@@ -40,6 +39,10 @@
 		CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationControllerDelegate.m; sourceTree = "<group>"; };
 		CBA3AEF320AC392A00F056C8 /* LGPopAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPopAnimatedTransitioning.h; sourceTree = "<group>"; };
 		CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPopAnimatedTransitioning.m; sourceTree = "<group>"; };
+		CBABD8BB20AE6A1400893392 /* LGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationController.h; sourceTree = "<group>"; };
+		CBABD8BC20AE6A1400893392 /* LGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
+		CBABD8C120AE7F5600893392 /* LGNavigationControllerCustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationControllerCustomTransition.h; sourceTree = "<group>"; };
+		CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationControllerCustomTransition.m; sourceTree = "<group>"; };
 		CBEE753520AD7B280054A1DE /* LGAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAnimatedController.h; sourceTree = "<group>"; };
 		CBEE753620AD7B280054A1DE /* LGAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAnimatedController.m; sourceTree = "<group>"; };
 		CD1BFA9A20ADC82900661818 /* LGInteractiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGInteractiveController.h; sourceTree = "<group>"; };
@@ -77,11 +80,10 @@
 		815717A41EEA6FB4009E2F37 /* LGNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				CD1BFA9920ADC76B00661818 /* 交互控制器 */,
+				CBABD8BA20AE69E000893392 /* 自定义 UINavigationController */,
 				CBEE753420AD7AE70054A1DE /* 转场控制器 */,
+				CD1BFA9920ADC76B00661818 /* 交互控制器 */,
 				CBEE752220AD1F940054A1DE /* 动画控制器 */,
-				815717BC1EEA6FDA009E2F37 /* LGNavigationController.h */,
-				815717BD1EEA6FDA009E2F37 /* LGNavigationController.m */,
 				815717A81EEA6FB4009E2F37 /* AppDelegate.h */,
 				815717A91EEA6FB4009E2F37 /* AppDelegate.m */,
 				815717AB1EEA6FB4009E2F37 /* ViewController.h */,
@@ -100,6 +102,17 @@
 				815717A61EEA6FB4009E2F37 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBABD8BA20AE69E000893392 /* 自定义 UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				CBABD8BB20AE6A1400893392 /* LGNavigationController.h */,
+				CBABD8BC20AE6A1400893392 /* LGNavigationController.m */,
+				CBABD8C120AE7F5600893392 /* LGNavigationControllerCustomTransition.h */,
+				CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */,
+			);
+			path = "自定义 UINavigationController";
 			sourceTree = "<group>";
 		};
 		CBEE752220AD1F940054A1DE /* 动画控制器 */ = {
@@ -159,7 +172,7 @@
 		8157179A1EEA6FB3009E2F37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = iOS;
 				TargetAttributes = {
 					815717A11EEA6FB3009E2F37 = {
@@ -210,9 +223,10 @@
 				CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */,
 				CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */,
 				815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */,
-				815717BE1EEA6FDA009E2F37 /* LGNavigationController.m in Sources */,
+				CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */,
 				CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */,
 				815717A71EEA6FB4009E2F37 /* main.m in Sources */,
+				CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */,
 				CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,15 +255,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -289,15 +311,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

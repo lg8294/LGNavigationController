@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -27,13 +27,35 @@
     [nextBtn setCenter:self.view.center];
     [self.view addSubview:nextBtn];
     
-//    if (self.navigationController.viewControllers.count % 2 == 0) {
-//        [self.navigationController setNavigationBarHidden:YES];
-//    } else {
-//        [self.navigationController setNavigationBarHidden:NO];
-//    }
+    // 测试隐藏 NaviagtionBar 后侧滑返回是否有效
+//#define TestNaviagtionBarHidden
+#ifdef TestNaviagtionBarHidden
+    if (self.navigationController.viewControllers.count % 2 == 0) {
+        [self.navigationController setNavigationBarHidden:YES];
+    } else {
+        [self.navigationController setNavigationBarHidden:NO];
+    }
+    
+#endif
+    
+    // 测试自定义返回按键后侧滑返回是否有效
+//#define TestBackBtnCustom
+#ifdef TestBackBtnCustom
+    if (self.navigationController.viewControllers.count > 1) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backAction:)];
+        
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+#endif
+    
 }
 
+#pragma mark -
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    NSLog(@"%s", __func__);
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    return YES;
+}
 #pragma mark - handle
 
 - (IBAction)nextPage:(id)sender {
