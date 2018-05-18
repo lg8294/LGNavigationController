@@ -30,11 +30,14 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *rootNav = [[LGNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.navcD = [[LGNavigationControllerDelegate alloc] init];
+    
+#define TestCustomNavigationTrantion
+#ifdef TestCustomNavigationTrantion
     [self.navcD setupNavigationController:rootNav];
-//    rootNav.delegate = self.navcD;
-//    rootNav.transitioningDelegate = [[LGAnimatedTransitioning alloc] init];
+#endif
+    
     self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
     

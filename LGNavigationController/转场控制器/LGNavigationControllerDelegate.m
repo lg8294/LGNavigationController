@@ -49,7 +49,10 @@ const NSString *kNavigationControllerCustomGestureRecognier;
     self.navc = navigationController;
     
     navigationController.delegate = self;
+//    NSLog(@"navigationController.view = %@", navigationController.view);
+//    NSLog(@"navigationController.interactivePopGestureRecognizer.view = %@", navigationController.interactivePopGestureRecognizer.view);
     [navigationController.view addGestureRecognizer:self.gestureRecognizer];
+//    [navigationController.interactivePopGestureRecognizer.view addGestureRecognizer:self.gestureRecognizer];
     navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
@@ -110,7 +113,7 @@ const NSString *kNavigationControllerCustomGestureRecognier;
 #pragma mark - private
 
 - (CGFloat)calculatePercentWithPoint:(CGPoint)point {
-    NSLog(@"%@", NSStringFromCGPoint(point));
+//    NSLog(@"%@", NSStringFromCGPoint(point));
     CGFloat percent = fabs(point.x/([UIScreen mainScreen].bounds.size.width/2));
     return percent;
 }

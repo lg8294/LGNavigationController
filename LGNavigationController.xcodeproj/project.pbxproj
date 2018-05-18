@@ -18,6 +18,8 @@
 		CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */; };
 		CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8BC20AE6A1400893392 /* LGNavigationController.m */; };
 		CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */; };
+		CBABD8C620AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */; };
+		CBABD8C920AEBEB300893392 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C820AEBEB300893392 /* OtherViewController.m */; };
 		CBEE753720AD7B280054A1DE /* LGAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753620AD7B280054A1DE /* LGAnimatedController.m */; };
 		CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1BFA9B20ADC82900661818 /* LGInteractiveController.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,10 @@
 		CBABD8BC20AE6A1400893392 /* LGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
 		CBABD8C120AE7F5600893392 /* LGNavigationControllerCustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationControllerCustomTransition.h; sourceTree = "<group>"; };
 		CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationControllerCustomTransition.m; sourceTree = "<group>"; };
+		CBABD8C420AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LGNavigationBarAppearance.h"; sourceTree = "<group>"; };
+		CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGNavigationBarAppearance.m"; sourceTree = "<group>"; };
+		CBABD8C720AEBEB300893392 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		CBABD8C820AEBEB300893392 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CBEE753520AD7B280054A1DE /* LGAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAnimatedController.h; sourceTree = "<group>"; };
 		CBEE753620AD7B280054A1DE /* LGAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAnimatedController.m; sourceTree = "<group>"; };
 		CD1BFA9A20ADC82900661818 /* LGInteractiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGInteractiveController.h; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 		815717A41EEA6FB4009E2F37 /* LGNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				CBABD8CA20AEC44E00893392 /* LGNavigationBarAppearance */,
 				CBABD8BA20AE69E000893392 /* 自定义 UINavigationController */,
 				CBEE753420AD7AE70054A1DE /* 转场控制器 */,
 				CD1BFA9920ADC76B00661818 /* 交互控制器 */,
@@ -88,6 +95,8 @@
 				815717A91EEA6FB4009E2F37 /* AppDelegate.m */,
 				815717AB1EEA6FB4009E2F37 /* ViewController.h */,
 				815717AC1EEA6FB4009E2F37 /* ViewController.m */,
+				CBABD8C720AEBEB300893392 /* OtherViewController.h */,
+				CBABD8C820AEBEB300893392 /* OtherViewController.m */,
 				815717B11EEA6FB4009E2F37 /* Assets.xcassets */,
 				815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */,
 				815717B61EEA6FB4009E2F37 /* Info.plist */,
@@ -113,6 +122,15 @@
 				CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */,
 			);
 			path = "自定义 UINavigationController";
+			sourceTree = "<group>";
+		};
+		CBABD8CA20AEC44E00893392 /* LGNavigationBarAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				CBABD8C420AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.h */,
+				CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */,
+			);
+			path = LGNavigationBarAppearance;
 			sourceTree = "<group>";
 		};
 		CBEE752220AD1F940054A1DE /* 动画控制器 */ = {
@@ -222,10 +240,12 @@
 				815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */,
 				CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */,
 				CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */,
+				CBABD8C620AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m in Sources */,
 				815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */,
 				CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */,
 				CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */,
 				815717A71EEA6FB4009E2F37 /* main.m in Sources */,
+				CBABD8C920AEBEB300893392 /* OtherViewController.m in Sources */,
 				CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */,
 				CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */,
 			);

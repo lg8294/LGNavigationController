@@ -1,1 +1,6 @@
 iOS7之后系统提供了侧滑手势（interactivePopGestureRecognizer），即从屏幕左侧边缘滑起会 pop 回导航控制器栈的上个 viewController。不过如果你自定义了UINavigationViewController 或者自定义了返回按钮，系统自带的侧滑返回功能会失效。
+
+1.通过自定义的 NavigationController 完成了侧滑返回在所以情况下都可以生效.
+2.通过自定义的 NavigationControllerDelegate，完成了自定义转场动画和交互式转场。
+3.参考 FDFullscreenPopGesture 实现对每个视图进行导航栏显示和隐藏的建议，当设置了建议值后，每次显示指定视图的时候总是采用它自己的建议值。如果有俩个 ViewController，第一个显示 NavigationBar，第二个不显示，那么从第二个视图切换到第一个视图的时候状态了也不会显示了。
+
