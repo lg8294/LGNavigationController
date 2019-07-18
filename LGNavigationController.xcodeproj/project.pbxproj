@@ -12,13 +12,13 @@
 		815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815717AC1EEA6FB4009E2F37 /* ViewController.m */; };
 		815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815717B11EEA6FB4009E2F37 /* Assets.xcassets */; };
 		815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815717B31EEA6FB4009E2F37 /* LaunchScreen.storyboard */; };
-		CBA3AEEC20AC283100F056C8 /* Problem in Resources */ = {isa = PBXBuildFile; fileRef = CBA3AEEB20AC283100F056C8 /* Problem */; };
+		CB4D9B1722E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4D9B1622E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.m */; };
+		CBA3AEEC20AC283100F056C8 /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = CBA3AEEB20AC283100F056C8 /* README.MD */; };
 		CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */; };
 		CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF120AC343600F056C8 /* LGNavigationControllerDelegate.m */; };
 		CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3AEF420AC392A00F056C8 /* LGPopAnimatedTransitioning.m */; };
 		CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8BC20AE6A1400893392 /* LGNavigationController.m */; };
 		CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */; };
-		CBABD8C620AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */; };
 		CBABD8C920AEBEB300893392 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD8C820AEBEB300893392 /* OtherViewController.m */; };
 		CBEE753720AD7B280054A1DE /* LGAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753620AD7B280054A1DE /* LGAnimatedController.m */; };
 		CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1BFA9B20ADC82900661818 /* LGInteractiveController.m */; };
@@ -34,7 +34,9 @@
 		815717B11EEA6FB4009E2F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815717B41EEA6FB4009E2F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		815717B61EEA6FB4009E2F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBA3AEEB20AC283100F056C8 /* Problem */ = {isa = PBXFileReference; lastKnownFileType = text; path = Problem; sourceTree = "<group>"; };
+		CB4D9B1522E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LGNavigationBarAppearance.h"; sourceTree = "<group>"; };
+		CB4D9B1622E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGNavigationBarAppearance.m"; sourceTree = "<group>"; };
+		CBA3AEEB20AC283100F056C8 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		CBA3AEED20AC2E6300F056C8 /* LGPushAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPushAnimatedTransitioning.h; sourceTree = "<group>"; };
 		CBA3AEEE20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPushAnimatedTransitioning.m; sourceTree = "<group>"; };
 		CBA3AEF020AC343600F056C8 /* LGNavigationControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationControllerDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		CBABD8BC20AE6A1400893392 /* LGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
 		CBABD8C120AE7F5600893392 /* LGNavigationControllerCustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNavigationControllerCustomTransition.h; sourceTree = "<group>"; };
 		CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNavigationControllerCustomTransition.m; sourceTree = "<group>"; };
-		CBABD8C420AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LGNavigationBarAppearance.h"; sourceTree = "<group>"; };
-		CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGNavigationBarAppearance.m"; sourceTree = "<group>"; };
 		CBABD8C720AEBEB300893392 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		CBABD8C820AEBEB300893392 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CBEE753520AD7B280054A1DE /* LGAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAnimatedController.h; sourceTree = "<group>"; };
@@ -69,7 +69,8 @@
 		815717991EEA6FB3009E2F37 = {
 			isa = PBXGroup;
 			children = (
-				CBA3AEEB20AC283100F056C8 /* Problem */,
+				CBA3AEEB20AC283100F056C8 /* README.MD */,
+				CB4D9B1422E01345004C61C3 /* LGNavigationBarAppearance */,
 				815717A41EEA6FB4009E2F37 /* LGNavigationController */,
 				815717A31EEA6FB4009E2F37 /* Products */,
 			);
@@ -86,7 +87,6 @@
 		815717A41EEA6FB4009E2F37 /* LGNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				CBABD8CA20AEC44E00893392 /* LGNavigationBarAppearance */,
 				CBABD8BA20AE69E000893392 /* 自定义 UINavigationController */,
 				CBEE753420AD7AE70054A1DE /* 转场控制器 */,
 				CD1BFA9920ADC76B00661818 /* 交互控制器 */,
@@ -113,6 +113,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CB4D9B1422E01345004C61C3 /* LGNavigationBarAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				CB4D9B1522E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.h */,
+				CB4D9B1622E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.m */,
+			);
+			path = LGNavigationBarAppearance;
+			sourceTree = "<group>";
+		};
 		CBABD8BA20AE69E000893392 /* 自定义 UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,15 +131,6 @@
 				CBABD8C220AE7F5600893392 /* LGNavigationControllerCustomTransition.m */,
 			);
 			path = "自定义 UINavigationController";
-			sourceTree = "<group>";
-		};
-		CBABD8CA20AEC44E00893392 /* LGNavigationBarAppearance */ = {
-			isa = PBXGroup;
-			children = (
-				CBABD8C420AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.h */,
-				CBABD8C520AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m */,
-			);
-			path = LGNavigationBarAppearance;
 			sourceTree = "<group>";
 		};
 		CBEE752220AD1F940054A1DE /* 动画控制器 */ = {
@@ -205,6 +205,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -223,7 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA3AEEC20AC283100F056C8 /* Problem in Resources */,
+				CBA3AEEC20AC283100F056C8 /* README.MD in Resources */,
 				815717B51EEA6FB4009E2F37 /* LaunchScreen.storyboard in Resources */,
 				815717B21EEA6FB4009E2F37 /* Assets.xcassets in Resources */,
 			);
@@ -240,13 +241,13 @@
 				815717AD1EEA6FB4009E2F37 /* ViewController.m in Sources */,
 				CD1BFA9C20ADC82900661818 /* LGInteractiveController.m in Sources */,
 				CBA3AEEF20AC2E6300F056C8 /* LGPushAnimatedTransitioning.m in Sources */,
-				CBABD8C620AEBA9D00893392 /* UINavigationController+LGNavigationBarAppearance.m in Sources */,
 				815717AA1EEA6FB4009E2F37 /* AppDelegate.m in Sources */,
 				CBABD8BD20AE6A1400893392 /* LGNavigationController.m in Sources */,
 				CBA3AEF520AC392A00F056C8 /* LGPopAnimatedTransitioning.m in Sources */,
 				815717A71EEA6FB4009E2F37 /* main.m in Sources */,
 				CBABD8C920AEBEB300893392 /* OtherViewController.m in Sources */,
 				CBABD8C320AE7F5600893392 /* LGNavigationControllerCustomTransition.m in Sources */,
+				CB4D9B1722E01345004C61C3 /* UINavigationController+LGNavigationBarAppearance.m in Sources */,
 				CBA3AEF220AC343600F056C8 /* LGNavigationControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
