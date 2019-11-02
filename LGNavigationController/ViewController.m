@@ -21,7 +21,7 @@
     
     self.lg_prefersNavigationBarHidden = NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = [NSString stringWithFormat:@"%u", self.navigationController.viewControllers.count];
+    self.title = [NSString stringWithFormat:@"%lu", self.navigationController.viewControllers.count];
     
     UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [nextBtn setTitle:@"下一页" forState:UIControlStateNormal];
