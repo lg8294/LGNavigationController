@@ -11,7 +11,7 @@
 
 /**
  导航控制器，在自定义了返回按键或隐藏了导航栏的情况下也可以通过侧滑返回，
- 如果需要改变转场动画，可以通过自定义转场动画来实现
+ 如果需要改变转场动画，可以通过自定义转场控制器来实现
  */
 @interface LGNavigationController : UINavigationController
 

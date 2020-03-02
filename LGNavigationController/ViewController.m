@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UINavigationController+LGNavigationBarAppearance.h"
+#import "../LGNavigationBarAppearance/UINavigationController+LGNavigationBarAppearance.h"
 #import "OtherViewController.h"
 
 @interface ViewController () <UIGestureRecognizerDelegate>
@@ -21,7 +21,7 @@
     
     self.lg_prefersNavigationBarHidden = NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = [NSString stringWithFormat:@"%lu", self.navigationController.viewControllers.count];
+    self.title = [NSString stringWithFormat:@"%lu", (unsigned long)self.navigationController.viewControllers.count];
     
     UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [nextBtn setTitle:@"下一页" forState:UIControlStateNormal];

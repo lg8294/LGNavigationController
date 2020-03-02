@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- 视同控制器扩展
+ 视图控制器扩展
  */
 @interface UIViewController (LGPrefersNavigationBarHidden)
 

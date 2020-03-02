@@ -14,8 +14,6 @@
 #import "LGNavigationControllerDelegate.h"
 #import "LGPushAnimatedTransitioning.h"
 
-#import "LGNavigationControllerCustomTransition.h"
-
 @interface AppDelegate ()
 
 @property (nonatomic, strong) LGNavigationControllerDelegate *navcD;
